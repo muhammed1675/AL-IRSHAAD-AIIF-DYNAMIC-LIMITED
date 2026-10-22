@@ -12,7 +12,7 @@ export const company = {
   description:
   'A multi-service company working across travels and tours, media and television, and events and entertainment — helping individuals, families and organisations plan journeys, tell stories and host meaningful occasions.',
   /** International format, digits only — e.g. "2348031234567". Leave empty until confirmed. */
-  whatsappNumber: '',
+  whatsappNumber: '2348108441454',
   /** Display format — e.g. "+234 803 123 4567". */
   phone: '+2348108441454',
   email: '',
@@ -20,9 +20,14 @@ export const company = {
   hours: '',
   /** Optional Google Maps link for the confirmed office address. */
   mapUrl: '',
-  socials: [] as {label: string;href: string;}[],
+  socials: [
+    { label: 'Facebook', href: 'https://www.facebook.com/share/1J2iEJhyTV/?mibextid=wwXIfr' },
+    { label: 'YouTube', href: 'https://youtube.com/@alirshaadtv?si=qFmvvq4LGc11F_FR' },
+    { label: 'Instagram', href: 'https://www.instagram.com/alirshaad_dynamics?rpxt=MWZjZDB3MGU9uam5sOQ==' },
+    { label: 'TikTok', href: 'https://www.tiktok.com/@alirshaad.dynamic?_r=1&_t=ZS-9AlpjRMxKfE' },
+  ] as {label: string;href: string;}[],
   /** AL-IRSHAAD TV YouTube channel URL. */
-  youtubeChannelUrl: '',
+  youtubeChannelUrl: 'https://youtube.com/@alirshaadtv?si=qFmvvq4LGc11F_FR',
   /** YouTube live or video URL used in the live-streaming area. */
   liveStreamUrl: ''
 };

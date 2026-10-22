@@ -7,6 +7,7 @@ import { MediaTV } from './pages/MediaTV';
 import { EventsEntertainment } from './pages/EventsEntertainment';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { Terms } from './pages/Terms';
 
 export function App() {
   return (
@@ -19,6 +20,7 @@ export function App() {
           <Route path="events-entertainment" element={<EventsEntertainment />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="terms" element={<Terms />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
