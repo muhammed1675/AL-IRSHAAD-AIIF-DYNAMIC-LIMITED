@@ -10,7 +10,7 @@ export function Logo({ tone = 'dark' }: LogoProps) {
   return (
     <Link to="/" aria-label={`${company.name} — home`} className="inline-flex shrink-0 rounded-md">
       <img
-        src="/AIIF.svg"
+        src="/AL-IRSHAAD-logo.svg"
         alt={`${company.name} logo`}
         className={`h-16 w-auto object-contain ${tone === 'light' ? 'brightness-110' : ''}`}
       />
