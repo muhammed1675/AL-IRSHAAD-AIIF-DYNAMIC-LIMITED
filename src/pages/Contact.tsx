@@ -66,7 +66,7 @@ export function Contact() {
     icon: MessageCircle,
     title: 'WhatsApp',
     text: 'Chat with us for quick assistance.',
-    value: isWhatsAppConfigured ? 'Start a chat' : '',
+    value: isWhatsAppConfigured ? company.phone : '',
     href: isWhatsAppConfigured ? buildWhatsAppUrl(`Hello ${company.shortName}, I would like to make an enquiry.`) : undefined
   }, {
     icon: Mail,
