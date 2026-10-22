@@ -68,6 +68,10 @@ export function About() {
               </blockquote>
               <figcaption className="mt-3 text-[12.5px] text-ink-soft">Guiding statement — proposed wording for company review</figcaption>
             </figure>
+            <div className="mt-5 flex flex-col gap-1 rounded-2xl border border-cream-300 bg-white px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+              <span className="text-[13px] font-medium uppercase tracking-[0.08em] text-ink-soft">Company Information</span>
+              <span className="text-[14px] font-semibold text-navy">CAC Registration No.: {company.cacRegistrationNumber}</span>
+            </div>
           </Reveal>
         </div>
       </Section>

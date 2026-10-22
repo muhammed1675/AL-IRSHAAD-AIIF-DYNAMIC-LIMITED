@@ -6,6 +6,8 @@
 export const company = {
   name: 'AL-IRSHAAD AIIF DYNAMIC LIMITED',
   shortName: 'AL-IRSHAAD',
+  /** Confirmed Corporate Affairs Commission registration number. */
+  cacRegistrationNumber: 'RC 9933483',
   subName: 'AIIF DYNAMIC LIMITED',
   description:
   'A multi-service company working across travels and tours, media and television, and events and entertainment — helping individuals, families and organisations plan journeys, tell stories and host meaningful occasions.',

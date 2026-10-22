@@ -82,9 +82,14 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 text-[13px] text-white/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} {company.name}. All rights reserved.
-          </p>
+          <div className="space-y-1">
+            <p>
+              © {new Date().getFullYear()} {company.name}. All rights reserved.
+            </p>
+            <p className="text-[12px] text-white/55">
+              CAC Registration No.: {company.cacRegistrationNumber}
+            </p>
+          </div>
           <p>
             Privacy Policy · Terms of Service <span className="text-white/40">(documents to be added)</span>
           </p>
