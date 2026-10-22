@@ -14,9 +14,9 @@ export const company = {
   /** International format, digits only — e.g. "2348031234567". Leave empty until confirmed. */
   whatsappNumber: '',
   /** Display format — e.g. "+234 803 123 4567". */
-  phone: '',
+  phone: '+2348108441454',
   email: '',
-  address: '',
+  address: 'Behind Nature-Nuture School, Ajegunle Market, Oyo, Oyo, Nigeria, 211101',
   hours: '',
   /** Optional Google Maps link for the confirmed office address. */
   mapUrl: '',
