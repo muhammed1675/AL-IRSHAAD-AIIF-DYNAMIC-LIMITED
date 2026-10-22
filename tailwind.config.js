@@ -33,12 +33,33 @@ export default {content: [
         ring: 'var(--ring)',
         'destructive-foreground': 'var(--destructive-foreground)',
         navy: {
-          DEFAULT: '#13234A',
-          950: '#0A1630',
-          900: '#0E1B3A',
-          800: '#13234A',
-          700: '#1E3263',
-          600: '#2B4178'
+          DEFAULT: '#075331',
+          950: '#033320',
+          900: '#06452A',
+          800: '#075331',
+          700: '#176642',
+          600: '#2B7A55'
+        },
+        cream: {
+          DEFAULT: '#F7F1DC',
+          50: '#FBFAF4',
+          100: '#FAF6E9',
+          200: '#F1E5BD',
+          300: '#E6D8AD',
+          400: '#D9C98F'
+        },
+        gold: {
+          DEFAULT: '#C79A28',
+          300: '#E4C866',
+          400: '#D9B449',
+          500: '#C79A28',
+          600: '#A77B18',
+          700: '#86600F'
+        },
+        ink: {
+          DEFAULT: '#173D2B',
+          muted: '#5F665E',
+          soft: '#7A8179'
         },
         cream: {
           DEFAULT: '#F6EFE4',

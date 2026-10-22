@@ -17,25 +17,25 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --background: #fcfaf6;
-  --foreground: #1b2236;
+  --background: #fbfaf4;
+  --foreground: #173d2b;
   --card: #ffffff;
-  --card-foreground: #1b2236;
+  --card-foreground: #173d2b;
   --popover: #ffffff;
-  --popover-foreground: #1b2236;
-  --primary: #13234a;
-  --primary-foreground: #ffffff;
-  --secondary: #f3eadc;
-  --secondary-foreground: #13234a;
-  --muted: #f6efe4;
-  --muted-foreground: #5b606d;
-  --accent: #f3eadc;
-  --accent-foreground: #13234a;
+  --popover-foreground: #173d2b;
+  --primary: #075331;
+  --primary-foreground: #fffdf5;
+  --secondary: #f1e5bd;
+  --secondary-foreground: #075331;
+  --muted: #f7f1dc;
+  --muted-foreground: #5f665e;
+  --accent: #d3a52f;
+  --accent-foreground: #173d2b;
   --destructive: #b42318;
   --destructive-foreground: #b42318;
-  --border: #e8dcc8;
-  --input: #ddd0b9;
-  --ring: #c08a3e;
+  --border: #e6d8ad;
+  --input: #d9c98f;
+  --ring: #c79a28;
   --radius: 0.75rem;
 }
 @layer base {
