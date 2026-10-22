@@ -1,0 +1,82 @@
+/* --- MANAGED FONT IMPORTS START (do not edit manually) --- */
+/* INTERNAL USE NAME: Heading */
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* INTERNAL USE NAME: Mono */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* --- MANAGED FONT IMPORTS END --- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import './_designSystem/ds-6551b66a-cfd3-4df9-a9b1-9ead8d7fe7e9/index.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --background: #fcfaf6;
+  --foreground: #1b2236;
+  --card: #ffffff;
+  --card-foreground: #1b2236;
+  --popover: #ffffff;
+  --popover-foreground: #1b2236;
+  --primary: #13234a;
+  --primary-foreground: #ffffff;
+  --secondary: #f3eadc;
+  --secondary-foreground: #13234a;
+  --muted: #f6efe4;
+  --muted-foreground: #5b606d;
+  --accent: #f3eadc;
+  --accent-foreground: #13234a;
+  --destructive: #b42318;
+  --destructive-foreground: #b42318;
+  --border: #e8dcc8;
+  --input: #ddd0b9;
+  --ring: #c08a3e;
+  --radius: 0.75rem;
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-background font-sans text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-navy;
+  }
+  :focus-visible {
+    outline: 2px solid #c08a3e;
+    outline-offset: 2px;
+  }
+}
+@layer components {
+  .eyebrow {
+    @apply text-[11.5px] font-semibold uppercase tracking-[0.22em] text-ink-muted;
+  }
+  .hero-clip {
+    clip-path: url(#al-hero-curve-mobile);
+  }
+  .sculpt-clip {
+    clip-path: url(#al-sculpt);
+  }
+  @media (min-width: 1024px) {
+    .hero-clip {
+      clip-path: url(#al-hero-curve);
+    }
+  }
+}

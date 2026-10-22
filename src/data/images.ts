@@ -1,0 +1,35 @@
+/**
+ * Representative imagery. Replace with genuine AL-IRSHAAD photography before launch.
+ */
+export const images = {
+  homeHero: "/544513ab-27b6-4720-ad0a-cc1adba43ca6.jpg",
+  travelHero: "/56e555ed-2d4f-4550-958e-1ad250b8b7d4.jpg",
+  mediaHero: "/131fa915-799d-40c3-ac75-38f02e373bb7.jpg",
+  eventsHero: "/5eb3e72e-7836-40ac-9172-fead16f459ff.jpg",
+  aboutHero: "/d699dfdf-057e-44dc-bc77-9802a692038b.jpg",
+  contactHero: "/78a7c42e-ec3f-477a-87a6-0245ae18fb78.jpg",
+  divTravel: "/ba709ab3-68c6-4b37-9723-3142a9560e4c.jpg",
+  divMedia: "/b5c077d8-63d2-4d5e-be85-edf9386e3ecd.jpg",
+  divEvents: "/50ee8665-860e-483e-8612-c0cb5dbd8d4d.jpg",
+  madinah: "/ce2a1973-0cc6-4095-937f-506e19644b07.jpg",
+  istanbul: "/c9db8a63-a95f-4a12-99ac-b81921858457.jpg",
+  dubai: "/cca3c293-1774-4135-914a-8334de6ab282.jpg",
+  london: "/b636bc6f-d0d0-448a-a126-160d36556b70.jpg",
+  kualaLumpur: "/0af502e4-cd69-440f-aeac-159d690f3149.jpg",
+  travelDocs: "/334c6fac-0bd7-4b26-9b29-40cf1208fbef.jpg",
+  mediaPhoto: "/2c268cc7-a1c1-4d92-9a79-9b9821680100.jpg",
+  mediaEditing: "/3a48d422-967c-4dbd-828d-68019e7d6d4c.jpg",
+  mediaStream: "/625a1df3-c839-4a6e-a55d-eae1e8dc252d.jpg",
+  mediaDesign: "/8cf752a0-ebd8-4236-878c-af1dbf25854f.jpg",
+  tvStudio: "/d4f3ad28-4bbb-47f1-9aeb-2cac32d666d7.jpg",
+  eventDecor: "/0e57ce01-0680-4c8b-b423-6a3b460655aa.jpg",
+  eventOutdoor: "/0e9f33e5-e16c-419b-98a8-3b3b41a73127.jpg",
+  eventStage: "/07c94191-afb9-4920-97b8-a921330115b6.jpg",
+  eventLogistics: "/8ed0c1ab-8786-485c-bea7-fe3f288316b2.jpg",
+  studyTravel: "/9ff7d3f4-3cac-44e5-b1e0-2031635545f9.jpg",
+  workTravel: "/70ba29ad-5730-45e3-96be-5b9020d8a4b6.jpg",
+  tourTraveller: "/e173f70c-f0ae-42fe-a05e-261514cc4f5a.jpg",
+  teamMeeting: "/34b79d87-aea3-42d1-a112-d68598ef1632.jpg",
+  pilgrims: "/e4a4d508-aeb4-4dc7-8213-942866e5dad8.jpg",
+  weddingCouple: "/a7acdbdc-6af2-4d2c-ac8b-1e85bf447ff0.jpg"
+};
