@@ -17,26 +17,41 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --background: #fbfaf4;
-  --foreground: #173d2b;
+  --background: #f7faff;
+  --foreground: #1f2937;
   --card: #ffffff;
-  --card-foreground: #173d2b;
+  --card-foreground: #1f2937;
   --popover: #ffffff;
-  --popover-foreground: #173d2b;
-  --primary: #075331;
-  --primary-foreground: #fffdf5;
-  --secondary: #f1e5bd;
-  --secondary-foreground: #075331;
-  --muted: #f7f1dc;
-  --muted-foreground: #5f665e;
-  --accent: #d3a52f;
-  --accent-foreground: #173d2b;
+  --popover-foreground: #1f2937;
+  --primary: #2f6fbe;
+  --primary-foreground: #ffffff;
+  --secondary: #dcecff;
+  --secondary-foreground: #245b9f;
+  --muted: #eef5ff;
+  --muted-foreground: #64748b;
+  --accent: #8db7eb;
+  --accent-foreground: #1f2937;
   --destructive: #b42318;
   --destructive-foreground: #b42318;
-  --border: #e6d8ad;
-  --input: #d9c98f;
-  --ring: #c79a28;
+  --border: #c9dcf4;
+  --input: #b7cfea;
+  --ring: #6c9fda;
   --radius: 0.75rem;
+}
+
+@layer utilities {
+  .bg-cream-50 { background-color: #f7faff; }
+  .bg-cream-100 { background-color: #eef5ff; }
+  .bg-cream-200 { background-color: #dcecff; }
+  .bg-cream-300 { background-color: #c9dcf4; }
+  .border-cream-200 { border-color: #dcecff; }
+  .border-cream-300 { border-color: #c9dcf4; }
+  .text-navy { color: #1f2937; }
+  .text-gold-600 { color: #2f6fbe; }
+  .text-gold-500 { color: #6c9fda; }
+  .bg-gold-500 { background-color: #6c9fda; }
+  .text-ink { color: #1f2937; }
+  .text-ink-muted { color: #64748b; }
 }
 @layer base {
   * {
