@@ -131,8 +131,8 @@ export function Contact() {
     }} />
 
       <section id="contact-methods" aria-label="Contact methods" className="scroll-mt-24 pt-10 sm:pt-12">
-        <ul className="mx-auto grid max-w-site gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-          {methods.map((m) => <li key={m.title}>
+        <ul className="mx-auto grid max-w-site grid-cols-1 gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+          {methods.map((m) => <li key={m.title} className="min-w-0">
               <MethodCard method={m} />
             </li>)}
         </ul>
@@ -253,13 +253,13 @@ function MethodCard({
       <span className="min-w-0 flex-1">
         <span className="block font-display text-[17px] font-semibold text-navy">{title}</span>
         <span className="mt-0.5 block text-[13.5px] text-ink-muted">{text}</span>
-        <span className={`mt-2 block truncate text-[14px] font-semibold ${value ? 'text-navy' : 'font-medium italic text-ink-soft'}`}>
+        <span className={`mt-2 block break-words text-[14px] font-semibold ${value ? 'text-navy' : 'font-medium italic text-ink-soft'}`}>
           {value || 'Details to be confirmed'}
         </span>
       </span>
       {href && <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-gold-600 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />}
     </>;
-  const cls = 'group flex h-full gap-4 rounded-[22px] border border-cream-300/70 bg-white p-5 shadow-soft';
+  const cls = 'group flex h-full min-w-0 gap-4 rounded-[22px] border border-cream-300/70 bg-white p-5 shadow-soft';
   if (!href) return <div className={cls}>{body}</div>;
   const external = href.startsWith('http');
   return <a href={href} className={`${cls} transition-shadow hover:shadow-lift`} {...external ? {

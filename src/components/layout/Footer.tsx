@@ -91,7 +91,8 @@ export function Footer() {
             </p>
           </div>
           <p>
-            Privacy Policy · Terms of Service <span className="text-white/40">(documents to be added)</span>
+            <Link to="/privacy" className="hover:text-gold-300">Privacy Policy</Link> ·{' '}
+            <Link to="/terms" className="hover:text-gold-300">Terms of Service</Link>
           </p>
         </div>
       </div>
