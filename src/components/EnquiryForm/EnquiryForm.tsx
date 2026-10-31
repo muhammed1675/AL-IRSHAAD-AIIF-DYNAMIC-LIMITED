@@ -1,10 +1,11 @@
 import React from 'react';
-import { AlertCircle, CheckCircle2, ChevronDown, Copy, MessageCircle, Send } from 'lucide-react';
+import { AlertCircle, CheckCircle2, ChevronDown, Copy, Send } from 'lucide-react';
 import { Input } from '../ui/Input';
 import { Textarea } from '../ui/Textarea';
 import { Label } from '../ui/Label';
 import { Button } from '../ui/Button';
 import { useEnquiryForm } from './useEnquiryForm';
+import { WhatsAppIcon } from '../WhatsAppIcon';
 import { company, isWhatsAppConfigured } from '../../data/company';
 import { buildWhatsAppUrl } from '../../utils/whatsapp';
 import type { FormField, FormValues } from '../../types/content';
@@ -87,7 +88,7 @@ export function EnquiryForm({ formId, topic, fields, prefill, heading, intro, cl
                   type="checkbox"
                   checked={selected.includes(o)}
                   onChange={() => toggleOption(f.name, o)}
-                  className="h-4 w-4 accent-[#A0702A]" />
+                  className="h-4 w-4 accent-[#06561F]" />
                 
                 {o}
               </label>
@@ -176,7 +177,7 @@ export function EnquiryForm({ formId, topic, fields, prefill, heading, intro, cl
         type="submit"
         className="mt-5 h-12 w-full rounded-full bg-gold-600 text-[15px] font-semibold text-white hover:bg-gold-700">
         
-        {isWhatsAppConfigured ? <MessageCircle className="h-[18px] w-[18px]" aria-hidden="true" /> : <Send className="h-[18px] w-[18px]" aria-hidden="true" />}
+        {isWhatsAppConfigured ? <WhatsAppIcon className="h-[18px] w-[18px]" aria-hidden="true" /> : <Send className="h-[18px] w-[18px]" aria-hidden="true" />}
         {isWhatsAppConfigured ? 'Continue to WhatsApp' : 'Prepare My Enquiry'}
       </Button>
 
