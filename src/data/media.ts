@@ -63,7 +63,7 @@ export const tvCategories = ['Islamic lectures', 'Tafsir', 'Religious programmes
 /** Add real YouTube URLs to `url` to turn each placeholder into a working embed. */
 export const tvFeatured = {
   title: 'AL-IRSHAAD TV — featured programme',
-  url: '',
+  url: 'https://youtu.be/OCCyYgzhIQk?si=-EaisS_fDhmlXdRk',
   image: images.tvStudio,
   imageAlt: 'AL-IRSHAAD TV style studio set'
 };
