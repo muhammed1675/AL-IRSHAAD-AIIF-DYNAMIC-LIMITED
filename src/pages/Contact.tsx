@@ -61,8 +61,8 @@ export function Contact() {
     icon: Phone,
     title: 'Call Us',
     text: 'Speak directly with our team.',
-    value: company.phone,
-    href: company.phone ? `tel:${company.phone.replace(/\s/g, '')}` : undefined
+    value: company.callPhone,
+    href: company.callPhone ? `tel:${company.callPhone.replace(/\s/g, '')}` : undefined
   }, {
     icon: WhatsAppIcon,
     title: 'WhatsApp',
@@ -174,10 +174,10 @@ export function Contact() {
                     </p>
                   </div>
                 </div>}
-              <div className="flex items-center gap-3 border-t border-cream-200 px-7 py-4 text-[14px] text-ink-muted">
-                <Clock className="h-[18px] w-[18px] shrink-0 text-gold-600" aria-hidden="true" />
-                {company.hours || 'Opening hours — to be confirmed'}
-              </div>
+              {company.hours && <div className="flex items-center gap-3 border-t border-cream-200 px-7 py-4 text-[14px] text-ink-muted">
+                  <Clock className="h-[18px] w-[18px] shrink-0 text-gold-600" aria-hidden="true" />
+                  {company.hours}
+                </div>}
             </div>
 
             <div className="rounded-[26px] bg-navy-900 p-7 text-white">
