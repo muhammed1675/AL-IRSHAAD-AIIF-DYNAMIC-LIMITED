@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Clapperboard, Clock, Handshake, Mail, MapPin, MessageCircle, MessagesSquare, Phone, Plane, Send, Sparkles, BoxIcon } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Clapperboard, Clock, Handshake, Mail, MapPin, MessagesSquare, Phone, Plane, Send, Sparkles, BoxIcon } from "lucide-react";
 import { CurvedHero } from "../components/CurvedHero";
 import { LinkButton } from "../components/LinkButton";
 import { Section } from "../components/Section";
 import { Accent, SectionHeading } from "../components/SectionHeading";
 import { EnquiryForm } from "../components/EnquiryForm/EnquiryForm";
 import { Reveal } from "../components/Reveal";
+import { WhatsAppIcon } from "../components/WhatsAppIcon";
 import { usePageMeta } from "../hooks/usePageMeta";
 import { images } from "../data/images";
 import { company, isWhatsAppConfigured } from "../data/company";
@@ -63,7 +64,7 @@ export function Contact() {
     value: company.phone,
     href: company.phone ? `tel:${company.phone.replace(/\s/g, '')}` : undefined
   }, {
-    icon: MessageCircle,
+    icon: WhatsAppIcon,
     title: 'WhatsApp',
     text: 'Chat with us for quick assistance.',
     value: isWhatsAppConfigured ? 'Start a chat' : '',
@@ -119,7 +120,7 @@ export function Contact() {
             <LinkButton to="#enquiry" icon={Send}>
               Send a Message
             </LinkButton>
-            {isWhatsAppConfigured ? <LinkButton to={buildWhatsAppUrl(`Hello ${company.shortName}, I would like to make an enquiry.`)} variant="light" icon={MessageCircle}>
+            {isWhatsAppConfigured ? <LinkButton to={buildWhatsAppUrl(`Hello ${company.shortName}, I would like to make an enquiry.`)} variant="light" icon={WhatsAppIcon}>
                 Chat on WhatsApp
               </LinkButton> : <LinkButton to="/#services" variant="light" icon={ArrowRight}>
                 Explore Services
