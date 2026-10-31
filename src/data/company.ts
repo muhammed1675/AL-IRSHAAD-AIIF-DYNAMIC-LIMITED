@@ -26,12 +26,12 @@ export const company = {
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Ajegunle+Market+Oyo+Oyo+State+Nigeria',
   socials: [
     { label: 'Facebook', href: 'https://www.facebook.com/share/1J2iEJhyTV/?mibextid=wwXIfr' },
-    { label: 'YouTube', href: 'https://youtube.com/@alirshaadtv?si=qFmvvq4LGc11F_FR' },
+    { label: 'YouTube', href: 'https://youtube.com/@al-irshaadtv?si=HuldsZv1ta5RYntk' },
     { label: 'Instagram', href: 'https://www.instagram.com/alirshaad_dynamics?rpxt=MWZjZDB3MGU9uam5sOQ==' },
     { label: 'TikTok', href: 'https://www.tiktok.com/@alirshaad.dynamic?_r=1&_t=ZS-9AlpjRMxKfE' },
   ] as {label: string;href: string;}[],
   /** AL-IRSHAAD TV YouTube channel URL. */
-  youtubeChannelUrl: 'https://youtube.com/@alirshaadtv?si=qFmvvq4LGc11F_FR',
+  youtubeChannelUrl: 'https://youtube.com/@al-irshaadtv?si=HuldsZv1ta5RYntk',
   /** YouTube live or video URL used in the live-streaming area. */
   liveStreamUrl: ''
 };
