@@ -17,25 +17,25 @@
 /* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
 
 :root {
-  --background: #fbfaf4;
-  --foreground: #173d2b;
+  --background: #fefcf5;
+  --foreground: #12301d;
   --card: #ffffff;
-  --card-foreground: #173d2b;
+  --card-foreground: #12301d;
   --popover: #ffffff;
   --popover-foreground: #173d2b;
-  --primary: #075331;
+  --primary: #06561f;
   --primary-foreground: #fffdf5;
-  --secondary: #f1e5bd;
-  --secondary-foreground: #075331;
-  --muted: #f7f1dc;
-  --muted-foreground: #5f665e;
-  --accent: #d3a52f;
-  --accent-foreground: #173d2b;
+  --secondary: #f4ebc9;
+  --secondary-foreground: #06561f;
+  --muted: #f8f3df;
+  --muted-foreground: #55645a;
+  --accent: #d6a21e;
+  --accent-foreground: #12301d;
   --destructive: #b42318;
   --destructive-foreground: #b42318;
-  --border: #e6d8ad;
-  --input: #d9c98f;
-  --ring: #c79a28;
+  --border: #eaddae;
+  --input: #dcc989;
+  --ring: #d6a21e;
   --radius: 0.75rem;
 }
 @layer base {
@@ -60,7 +60,7 @@
     @apply font-display text-navy;
   }
   :focus-visible {
-    outline: 2px solid #c08a3e;
+    outline: 2px solid #d6a21e;
     outline-offset: 2px;
   }
 }
