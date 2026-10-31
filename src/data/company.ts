@@ -13,13 +13,17 @@ export const company = {
   'A multi-service company working across travels and tours, media and television, and events and entertainment — helping individuals, families and organisations plan journeys, tell stories and host meaningful occasions.',
   /** International format, digits only — e.g. "2348031234567". Leave empty until confirmed. */
   whatsappNumber: '2348108441454',
-  /** Display format — e.g. "+234 803 123 4567". */
+  /** WhatsApp number in display format (also used in the Privacy page). */
   phone: '+2348108441454',
-  email: '',
+  /** Number shown for phone calls ("Call Us" and the footer). */
+  callPhone: '+234 814 759 4404',
+  email: 'alirshadlimited@gmail.com',
+  /** Public website address — update when the domain is connected. */
+  siteUrl: 'https://alirshad.com.ng',
   address: 'Behind Nature-Nuture School, Ajegunle Market, Oyo, Oyo, Nigeria, 211101',
   hours: '',
   /** Optional Google Maps link for the confirmed office address. */
-  mapUrl: '',
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Ajegunle+Market+Oyo+Oyo+State+Nigeria',
   socials: [
     { label: 'Facebook', href: 'https://www.facebook.com/share/1J2iEJhyTV/?mibextid=wwXIfr' },
     { label: 'YouTube', href: 'https://youtube.com/@alirshaadtv?si=qFmvvq4LGc11F_FR' },
