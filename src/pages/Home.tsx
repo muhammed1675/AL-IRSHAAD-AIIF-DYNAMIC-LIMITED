@@ -9,6 +9,9 @@ import { ImageServiceCard } from '../components/ImageServiceCard';
 import { FilterGallery } from '../components/FilterGallery';
 import { CtaBand } from '../components/CtaBand';
 import { Reveal } from '../components/Reveal';
+import { TrustStrip } from '../components/TrustStrip';
+import { Testimonials } from '../components/Testimonials';
+import { Faq } from '../components/Faq';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { images } from '../data/images';
 import { divisions, featuredWork, homeBenefits } from '../data/home';
@@ -38,6 +41,8 @@ export function Home() {
         imagePosition="62% 50%"
         caption={{ icon: Compass, title: 'Three divisions', text: 'Travels & Tours · Media & TV · Events & Entertainment' }} />
       
+
+      <TrustStrip />
 
       {/* Company introduction */}
       <Section labelledBy="intro-title">
@@ -168,6 +173,10 @@ export function Home() {
           </Reveal>
         </div>
       </Section>
+
+      <Testimonials />
+
+      <Faq />
 
       <CtaBand
         eyebrow="Let’s work together"
