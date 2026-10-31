@@ -68,7 +68,24 @@ export const tvFeatured = {
   imageAlt: 'AL-IRSHAAD TV style studio set'
 };
 
+
 export const tvLatest = [
-{ title: 'Tafsir series', url: '', image: images.mediaStream, imageAlt: 'Lecture being recorded in an auditorium' },
-{ title: 'Islamic lecture', url: '', image: images.madinah, imageAlt: 'Masjid an-Nabawi in Madinah' },
-{ title: 'Interview programme', url: '', image: images.divMedia, imageAlt: 'Studio camera ready for an interview' }];
+  {
+    title: "RAMADAN TAFSIR DAY 04 (2026) BY AL-USTADH ABDUL'ADHEEM DAWUD AKOREDE AL-ADABIY (IGI-OGUN) 1447AH",
+    url: 'https://youtu.be/NDNrknA-WZA?si=CYFUNBxyF8bI3VJh',
+    image: images.mediaStream,
+    imageAlt: 'Ramadan Tafsir Day 04'
+  },
+  {
+    title: "EID AL-FITR KHUTUBAH 1447AH BY AL-USTADH ABDUL'ADHEEM DAWUD AKOREDE AJAO AL-ADABIYY IGI-OGUN",
+    url: 'https://youtu.be/mDI2n3wzOLY?si=Wax2B8sysdNu-kh8',
+    image: images.madinah,
+    imageAlt: 'Eid Al-Fitr Khutbah 1447AH'
+  },
+  {
+    title: 'IMAM AGBA OGBOMOSHO VISITATION TO IMAM DAWUD IGI-OGUN RESIDENCE, OYO.',
+    url: 'https://youtu.be/tDAsfeQtETo?si=O20-iI1JlXy_lUZr',
+    image: images.divMedia,
+    imageAlt: 'Imam Agba Ogbomosho visitation'
+  }
+];
