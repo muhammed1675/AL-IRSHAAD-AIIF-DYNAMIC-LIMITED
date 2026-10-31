@@ -1,4 +1,5 @@
-import { Briefcase, ClipboardList, Compass, FileCheck2, GraduationCap, Headphones, HeartHandshake, ListChecks, Map, MessageCircle, MoonStar, Plane, ShieldCheck } from 'lucide-react';
+import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { Briefcase, ClipboardList, Compass, FileCheck2, GraduationCap, Headphones, HeartHandshake, ListChecks, Map, MoonStar, Plane, ShieldCheck } from 'lucide-react';
 import { images } from './images';
 import type { Feature, FormField, ProcessStep, ServiceItem } from '../types/content';
 
@@ -58,7 +59,7 @@ export const destinations = [
 export const travelSteps: ProcessStep[] = [
 { title: 'Choose a service', description: 'Select the travel service you’d like help with.', icon: ListChecks },
 { title: 'Share your details', description: 'Tell us a little about your plans in the short form.', icon: ClipboardList },
-{ title: 'Continue to WhatsApp', description: 'If you wish, send your prepared enquiry directly on WhatsApp.', icon: MessageCircle },
+{ title: 'Continue to WhatsApp', description: 'If you wish, send your prepared enquiry directly on WhatsApp.', icon: WhatsAppIcon },
 { title: 'Our team follows up', description: 'We discuss your requirements, what’s needed and the next steps.', icon: Headphones }];
 
 
