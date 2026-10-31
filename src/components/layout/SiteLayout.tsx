@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { CurveDefs } from '../CurveDefs';
+import { WhatsAppFloat } from '../WhatsAppFloat';
 
 export function SiteLayout() {
   const { pathname, hash } = useLocation();
@@ -31,6 +32,7 @@ export function SiteLayout() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>);
 
 }
