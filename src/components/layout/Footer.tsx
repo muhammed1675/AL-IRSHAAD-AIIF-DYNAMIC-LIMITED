@@ -1,25 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Clock, Mail, MapPin, Phone, BoxIcon } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Logo } from "./Logo";
-import { company } from "../../data/company";
+import { SocialIcon } from "../SocialIcon";
+import { WhatsAppIcon } from "../WhatsAppIcon";
+import { company, isWhatsAppConfigured } from "../../data/company";
 import { footerServices, navLinks } from "../../data/navigation";
+import { buildWhatsAppUrl } from "../../utils/whatsapp";
 type ContactLine = {
-  icon: BoxIcon;
+  icon: LucideIcon;
   label: string;
   value: string;
   href?: string;
+  external?: boolean;
 };
 export function Footer() {
-  const contactLines: ContactLine[] = [{
+  const allLines: ContactLine[] = [{
     icon: MapPin,
     label: 'Office address',
-    value: company.address
+    value: company.address,
+    href: company.mapUrl || undefined,
+    external: true
   }, {
     icon: Phone,
     label: 'Phone',
-    value: company.phone,
-    href: company.phone ? `tel:${company.phone.replace(/\s/g, '')}` : undefined
+    value: company.callPhone,
+    href: company.callPhone ? `tel:${company.callPhone.replace(/\s/g, '')}` : undefined
+  }, {
+    icon: WhatsAppIcon,
+    label: 'WhatsApp',
+    value: isWhatsAppConfigured ? company.phone : '',
+    href: isWhatsAppConfigured ? buildWhatsAppUrl(`Hello ${company.shortName}, I would like to make an enquiry.`) : undefined,
+    external: true
   }, {
     icon: Mail,
     label: 'Email',
@@ -30,6 +43,8 @@ export function Footer() {
     label: 'Opening hours',
     value: company.hours
   }];
+  // Only show details that have actually been confirmed.
+  const contactLines = allLines.filter((l) => l.value);
   return <footer className="bg-navy-900 text-white/75">
       <div className="mx-auto max-w-site px-5 pb-8 pt-16 lg:px-8 lg:pt-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_0.9fr_1.2fr_1.2fr] lg:gap-10">
@@ -38,11 +53,9 @@ export function Footer() {
             <p className="mt-5 max-w-xs text-[14.5px] leading-relaxed">
               {company.name} — travels and tours, media and television, and events and entertainment under one company.
             </p>
-            {company.socials.length > 0 && <ul className="mt-6 flex flex-wrap gap-3">
+            {company.socials.length > 0 && <ul className="mt-6 flex flex-wrap gap-3" aria-label="Social media">
                 {company.socials.map((s) => <li key={s.href}>
-                    <a href={s.href} target="_blank" rel="noopener noreferrer" className="text-[14px] text-white hover:text-gold-300">
-                      {s.label}
-                    </a>
+                    <SocialIcon label={s.label} href={s.href} />
                   </li>)}
               </ul>}
           </div>
@@ -68,14 +81,18 @@ export function Footer() {
             icon: Icon,
             label,
             value,
-            href
+            href,
+            external
           }) => <li key={label} className="flex gap-3">
                 <Icon className="mt-0.5 h-[18px] w-[18px] shrink-0 text-gold-400" aria-hidden="true" />
                 <span>
                   <span className="sr-only">{label}: </span>
-                  {value ? href ? <a href={href} className="hover:text-gold-300">
+                  {href ? <a href={href} className="hover:text-gold-300" {...external ? {
+                  target: '_blank',
+                  rel: 'noopener noreferrer'
+                } : {}}>
                         {value}
-                      </a> : value : <span className="text-white/45">{label} — to be confirmed</span>}
+                      </a> : value}
                 </span>
               </li>)}
           </FooterColumn>
