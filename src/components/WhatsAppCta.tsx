@@ -1,5 +1,6 @@
 import React from 'react';
-import { MessageCircle, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 import { LinkButton } from './LinkButton';
 import { company, isWhatsAppConfigured } from '../data/company';
 import { buildWhatsAppUrl } from '../utils/whatsapp';
@@ -16,7 +17,7 @@ export function WhatsAppCta({ variant = 'navy', className }: WhatsAppCtaProps) {
       <LinkButton
         to={buildWhatsAppUrl(`Hello ${company.shortName}, I would like to make an enquiry.`)}
         variant={variant}
-        icon={MessageCircle}
+        icon={WhatsAppIcon}
         className={className}>
         
         Chat on WhatsApp
