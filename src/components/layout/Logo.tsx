@@ -9,11 +9,13 @@ type LogoProps = {
 export function Logo({ tone = 'dark' }: LogoProps) {
   return (
     <Link to="/" aria-label={`${company.name} — home`} className="inline-flex shrink-0 rounded-md">
-      <img
-        src="/AL-IRSHAAD-logo.svg"
-        alt={`${company.name} logo`}
-        className={`h-16 w-auto object-contain ${tone === 'light' ? 'brightness-110' : ''}`}
-      />
+      <span className={tone === 'light' ? 'inline-flex rounded-2xl bg-white p-2.5 shadow-soft' : 'inline-flex'}>
+        <img
+          src="/AL-IRSHAAD-logo.svg"
+          alt={`${company.name} logo`}
+          className={`w-auto object-contain ${tone === 'light' ? 'h-20' : 'h-16'}`}
+        />
+      </span>
     </Link>
   );
 }
